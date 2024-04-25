@@ -13,11 +13,11 @@ function createData(subject, grade) {
 }
 
 const recentGrades = [
-  createData('Mathematics', 'A'),
-  createData('Science', 'B+'),
-  createData('History', 'A-'),
-  createData('English', 'B'),
-  createData('Computer Science', 'A'),
+  createData('Computer Science 201: Accelerated Introduction to Computer Science', 'A'),
+  createData('Mathematics 151: Calculus I', 'B+'),
+  createData('Chemistry 124: Principles of Chemistry I with Laboratory', 'A-'),
+  createData('Literature 306: Science Fiction', 'B'),
+  createData('Psychology 221: Introduction to Psychological Science', 'A'),
 ];
 
 function preventDefault(event) {
@@ -27,7 +27,7 @@ function preventDefault(event) {
 export default function RecentGrades() {
   return (
     <React.Fragment>
-      <Title>Recent Grades</Title>
+      <Title>Current Grades</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -44,9 +44,6 @@ export default function RecentGrades() {
           ))}
         </TableBody>
       </Table>
-      <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-        See more grades
-      </Link>
     </React.Fragment>
   );
 }

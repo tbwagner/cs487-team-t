@@ -10,13 +10,13 @@ function createData(semester, gpa) {
 }
 
 const data = [
-  createData('Semester 1', 3.5),
-  createData('Semester 2', 3.8),
-  createData('Semester 3', 3.9),
-  createData('Semester 4', 3.7),
-  createData('Semester 5', 3.6),
-  createData('Semester 6', 3.9),
-  createData('Semester 7', 4.0),
+  createData('October', 3.5),
+  createData('November', 3.8),
+  createData('December', 3.9),
+  createData('January', 3.7),
+  createData('February', 3.6),
+  createData('March', 3.9),
+  createData('April', 3.7),
 ];
 
 export default function Chart() {

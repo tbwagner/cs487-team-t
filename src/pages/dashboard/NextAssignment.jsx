@@ -12,10 +12,10 @@ export default function NextAssignment() {
     <React.Fragment>
       <Title>Next Assignment</Title>
       <Typography component="p" variant="h4">
-        Team Design Report
+        Team Final Report
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        March 30, 2024
+        April 26, 2024
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>

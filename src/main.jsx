@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -10,6 +10,10 @@ import DashboardPage from './pages/dashboard/index.jsx';
 const defaultTheme = createTheme();
 
 function App() {
+  useEffect(() => {
+    document.title = "School Assist App"; // Set the new tab name
+  }, []);
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Router>
